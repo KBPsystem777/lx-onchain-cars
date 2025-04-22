@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              About CarRent PH
+              About LXCars PH
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
               Transforming car rental in the Philippines through technology and
@@ -31,7 +31,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                CarRent PH was founded in 2022 by a group of Filipino
+                LXCars PH was founded in 2022 by a group of Filipino
                 entrepreneurs who recognized the challenges of car rental and
                 ownership in the Philippines. With traffic congestion in major
                 cities, high costs of car ownership, and limited rental options,
@@ -53,7 +53,7 @@ export default function AboutPage() {
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/placeholder.svg?height=500&width=600"
-                alt="CarRent PH team"
+                alt="LXCars PH team"
                 fill
                 className="object-cover"
               />
@@ -181,7 +181,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Core Values</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              The principles that guide everything we do at CarRent PH
+              The principles that guide everything we do at LXCars PH
             </p>
           </div>
 
@@ -351,7 +351,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Journey</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Key milestones in the CarRent PH story
+              Key milestones in the LXCars PH story
             </p>
           </div>
 
@@ -363,7 +363,7 @@ export default function AboutPage() {
                   <p className="text-gray-500">January</p>
                 </div>
                 <div className="md:w-2/3">
-                  <h4 className="text-xl font-bold mb-2">CarRent PH Founded</h4>
+                  <h4 className="text-xl font-bold mb-2">LXCars PH Founded</h4>
                   <p className="text-gray-600">
                     Launched in Metro Manila with 50 cars and a mission to
                     transform car rental in the Philippines.

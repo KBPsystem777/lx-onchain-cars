@@ -50,9 +50,9 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-medium text-lg mb-2">Email</h3>
                 <p className="text-gray-600 mb-2">General Inquiries</p>
-                <p className="font-medium">info@carrentph.com</p>
+                <p className="font-medium">info@LXCarsph.com</p>
                 <p className="text-gray-600 mt-2">Support</p>
-                <p className="font-medium">support@carrentph.com</p>
+                <p className="font-medium">support@LXCarsph.com</p>
               </CardContent>
             </Card>
 
@@ -197,7 +197,7 @@ export default function ContactPage() {
                 Our Regional Offices
               </h2>
               <p className="text-gray-600">
-                CarRent PH is expanding across the Philippines to serve you
+                LXCars PH is expanding across the Philippines to serve you
                 better
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function ContactPage() {
                     <Phone className="inline h-4 w-4 mr-1" /> (032) 234-5678
                   </p>
                   <p className="text-sm text-gray-600">
-                    <Mail className="inline h-4 w-4 mr-1" /> cebu@carrentph.com
+                    <Mail className="inline h-4 w-4 mr-1" /> cebu@LXCarsph.com
                   </p>
                 </CardContent>
               </Card>
@@ -226,7 +226,7 @@ export default function ContactPage() {
                     <Phone className="inline h-4 w-4 mr-1" /> (082) 345-6789
                   </p>
                   <p className="text-sm text-gray-600">
-                    <Mail className="inline h-4 w-4 mr-1" /> davao@carrentph.com
+                    <Mail className="inline h-4 w-4 mr-1" /> davao@LXCarsph.com
                   </p>
                 </CardContent>
               </Card>
@@ -241,7 +241,7 @@ export default function ContactPage() {
                     <Phone className="inline h-4 w-4 mr-1" /> (045) 456-7890
                   </p>
                   <p className="text-sm text-gray-600">
-                    <Mail className="inline h-4 w-4 mr-1" /> clark@carrentph.com
+                    <Mail className="inline h-4 w-4 mr-1" /> clark@LXCarsph.com
                   </p>
                 </CardContent>
               </Card>

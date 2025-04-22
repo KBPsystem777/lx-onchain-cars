@@ -25,17 +25,17 @@ export default function PrivacyPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
                 <p className="text-blue-700">
-                  This Privacy Policy explains how CarRent PH collects, uses,
-                  and protects your personal information in accordance with the
-                  Data Privacy Act of 2012 (Republic Act No. 10173) and other
+                  This Privacy Policy explains how LXCars PH collects, uses, and
+                  protects your personal information in accordance with the Data
+                  Privacy Act of 2012 (Republic Act No. 10173) and other
                   applicable Philippine laws.
                 </p>
               </div>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
               <p>
-                CarRent PH ("we," "us," or "our") is committed to protecting
-                your privacy. This Privacy Policy describes how we collect, use,
+                LXCars PH ("we," "us," or "our") is committed to protecting your
+                privacy. This Privacy Policy describes how we collect, use,
                 store, and disclose your personal information when you use our
                 website, mobile application, and services (collectively, the
                 "Platform").
@@ -56,9 +56,9 @@ export default function PrivacyPage() {
                 security measures to protect your personal information.
               </p>
               <p>
-                CarRent Philippines, Inc. is registered with the National
-                Privacy Commission (NPC) as a personal information controller
-                and processor.
+                LXCars Philippines, Inc. is registered with the National Privacy
+                Commission (NPC) as a personal information controller and
+                processor.
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">
@@ -367,7 +367,7 @@ export default function PrivacyPage() {
               </h2>
               <p>
                 Our Platform may contain links to third-party websites or
-                services that are not owned or controlled by CarRent PH. We have
+                services that are not owned or controlled by LXCars PH. We have
                 no control over and assume no responsibility for the content,
                 privacy policies, or practices of any third-party websites or
                 services. We encourage you to review the privacy policies of
@@ -409,7 +409,7 @@ export default function PrivacyPage() {
               <p>
                 Data Protection Officer
                 <br />
-                CarRent Philippines, Inc.
+                LXCars Philippines, Inc.
                 <br />
                 123 Bonifacio Global City
                 <br />
@@ -417,7 +417,7 @@ export default function PrivacyPage() {
                 <br />
                 Philippines 1634
                 <br />
-                Email: privacy@carrentph.com
+                Email: privacy@LXCarsph.com
                 <br />
                 Phone: (02) 8123-4567
               </p>
@@ -443,8 +443,8 @@ export default function PrivacyPage() {
 
               <div className="text-center">
                 <p className="mb-6">
-                  By using the CarRent PH platform, you acknowledge that you
-                  have read and understood this Privacy Policy and agree to the
+                  By using the LXCars PH platform, you acknowledge that you have
+                  read and understood this Privacy Policy and agree to the
                   collection, use, and disclosure of your personal information
                   as described herein.
                 </p>

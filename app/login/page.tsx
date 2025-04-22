@@ -57,7 +57,7 @@ export default function LoginPage() {
           <Link href="/" className="inline-block">
             <Image
               src="/placeholder.svg?height=60&width=200"
-              alt="CarRent PH Logo"
+              alt="LXCars PH Logo"
               width={200}
               height={60}
               className="mx-auto"
@@ -66,9 +66,7 @@ export default function LoginPage() {
           <h1 className="text-2xl font-bold mt-4 text-gray-800">
             Welcome Back!
           </h1>
-          <p className="text-gray-600 mt-2">
-            Log in to your CarRent PH account
-          </p>
+          <p className="text-gray-600 mt-2">Log in to your LXCars PH account</p>
         </div>
 
         <Tabs defaultValue="renter" className="w-full">

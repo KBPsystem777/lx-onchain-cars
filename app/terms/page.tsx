@@ -26,23 +26,23 @@ export default function TermsPage() {
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
                 <p className="text-blue-700">
                   Please read these Terms of Service carefully before using the
-                  CarRent PH platform. By accessing or using our service, you
+                  LXCars PH platform. By accessing or using our service, you
                   agree to be bound by these terms.
                 </p>
               </div>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
               <p>
-                Welcome to CarRent PH, a peer-to-peer car rental platform
+                Welcome to LXCars PH, a peer-to-peer car rental platform
                 operating in the Philippines. These Terms of Service ("Terms")
-                govern your access to and use of the CarRent PH website, mobile
+                govern your access to and use of the LXCars PH website, mobile
                 application, and services (collectively, the "Platform").
               </p>
               <p>
-                CarRent PH is operated by CarRent Philippines, Inc., a
-                corporation registered under the laws of the Republic of the
-                Philippines with its principal office at 123 Bonifacio Global
-                City, Taguig City, Metro Manila ("we," "us," or "our").
+                LXCars PH is operated by LXCars Philippines, Inc., a corporation
+                registered under the laws of the Republic of the Philippines
+                with its principal office at 123 Bonifacio Global City, Taguig
+                City, Metro Manila ("we," "us," or "our").
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">
@@ -226,7 +226,7 @@ export default function TermsPage() {
                 6.2 Service Fees
               </h3>
               <p>
-                CarRent PH charges service fees for facilitating transactions on
+                LXCars PH charges service fees for facilitating transactions on
                 the Platform. These fees are clearly displayed before booking
                 confirmation and may include:
               </p>
@@ -255,7 +255,7 @@ export default function TermsPage() {
               <p>
                 All vehicles listed on the Platform must have valid
                 comprehensive insurance coverage in accordance with Philippine
-                law. CarRent PH offers additional protection plans that may
+                law. LXCars PH offers additional protection plans that may
                 cover:
               </p>
               <ul className="list-disc pl-6 mb-4">
@@ -347,7 +347,7 @@ export default function TermsPage() {
               <p>
                 All content on the Platform, including but not limited to text,
                 graphics, logos, icons, images, audio clips, digital downloads,
-                and software, is the property of CarRent PH or its content
+                and software, is the property of LXCars PH or its content
                 suppliers and is protected by Philippine and international
                 copyright laws.
               </p>
@@ -384,7 +384,7 @@ export default function TermsPage() {
                 12. Limitation of Liability
               </h2>
               <p>
-                To the maximum extent permitted by law, CarRent PH shall not be
+                To the maximum extent permitted by law, LXCars PH shall not be
                 liable for any indirect, incidental, special, consequential, or
                 punitive damages, or any loss of profits or revenues, whether
                 incurred directly or indirectly, or any loss of data, use,
@@ -424,7 +424,7 @@ export default function TermsPage() {
                 at:
               </p>
               <p>
-                CarRent Philippines, Inc.
+                LXCars Philippines, Inc.
                 <br />
                 123 Bonifacio Global City
                 <br />
@@ -432,7 +432,7 @@ export default function TermsPage() {
                 <br />
                 Philippines 1634
                 <br />
-                Email: legal@carrentph.com
+                Email: legal@LXCarsph.com
                 <br />
                 Phone: (02) 8123-4567
               </p>
@@ -441,8 +441,8 @@ export default function TermsPage() {
 
               <div className="text-center">
                 <p className="mb-6">
-                  By using the CarRent PH platform, you acknowledge that you
-                  have read, understood, and agree to be bound by these Terms of
+                  By using the LXCars PH platform, you acknowledge that you have
+                  read, understood, and agree to be bound by these Terms of
                   Service.
                 </p>
                 <div className="flex justify-center gap-4">

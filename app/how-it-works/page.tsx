@@ -20,7 +20,7 @@ export default function HowItWorksPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              How CarRent PH Works
+              How LXCars PH Works
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
               Your guide to renting and sharing cars in the Philippines -
@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Renting a Car is Easy</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Follow these simple steps to get on the road with CarRent PH
+              Follow these simple steps to get on the road with LXCars PH
             </p>
           </div>
 
@@ -131,7 +131,7 @@ export default function HowItWorksPage() {
               <p className="text-lg text-gray-600 mb-6">
                 Turn your idle vehicle into a source of income. Join thousands
                 of car owners across the Philippines who are earning extra by
-                sharing their cars on CarRent PH.
+                sharing their cars on LXCars PH.
               </p>
 
               <ul className="space-y-4">
@@ -260,7 +260,7 @@ export default function HowItWorksPage() {
               Your Safety is Our Priority
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              CarRent PH implements multiple layers of security to ensure a safe
+              LXCars PH implements multiple layers of security to ensure a safe
               experience for everyone
             </p>
           </div>
@@ -368,7 +368,7 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
                 <p className="text-gray-600">
-                  "As a car owner, I was hesitant at first, but CarRent PH made
+                  "As a car owner, I was hesitant at first, but LXCars PH made
                   it so easy to list my car and start earning. The verification
                   process made me feel secure about who was renting my vehicle."
                 </p>
@@ -459,7 +459,7 @@ export default function HowItWorksPage() {
             Ready to Get Started?
           </h2>
           <p className="text-xl opacity-90 max-w-2xl mx-auto mb-8">
-            Join the CarRent PH community today and experience a new way to rent
+            Join the LXCars PH community today and experience a new way to rent
             or share cars in the Philippines
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

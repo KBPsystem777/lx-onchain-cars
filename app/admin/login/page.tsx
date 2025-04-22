@@ -54,7 +54,7 @@ export default function AdminLoginPage() {
           <Link href="/" className="inline-block">
             <Image
               src="/placeholder.svg?height=60&width=200"
-              alt="CarRent PH Admin"
+              alt="LXCars PH Admin"
               width={200}
               height={60}
               className="mx-auto"
@@ -64,7 +64,7 @@ export default function AdminLoginPage() {
             Admin Portal
           </h1>
           <p className="text-gray-600 mt-2">
-            Secure access to CarRent PH administration
+            Secure access to LXCars PH administration
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function AdminLoginPage() {
                 <Input
                   id="admin-email"
                   type="email"
-                  placeholder="admin@carrentph.com"
+                  placeholder="admin@LXCarsph.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -157,7 +157,7 @@ export default function AdminLoginPage() {
             href="/"
             className="text-sm text-slate-600 hover:text-slate-800"
           >
-            ← Return to CarRent PH Homepage
+            ← Return to LXCars PH Homepage
           </Link>
         </div>
       </div>
