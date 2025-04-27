@@ -78,7 +78,7 @@ export default function HomePage() {
                 <Link href="/cars">
                   <Button size="lg">Find a Car</Button>
                 </Link>
-                <Link href="/owner/register">
+                <Link href="/signup/owner">
                   <Button size="lg" variant="outline">
                     List Your Car
                   </Button>
