@@ -1,5 +1,6 @@
-import { RentalChecklist } from "@/components/rental-checklist"
-import { OwnerLayout } from "@/components/owner-layout"
+"use client";
+import { RentalChecklist } from "@/components/rental-checklist";
+import { OwnerLayout } from "@/components/owner-layout";
 
 export default function OwnerChecklistsPage() {
   // Pre-rental checklist items for car owners
@@ -56,14 +57,16 @@ export default function OwnerChecklistsPage() {
     {
       id: "review-policies",
       label: "Review rental policies and return procedures",
-      description: "Discuss fuel requirements, return time, and condition expectations",
+      description:
+        "Discuss fuel requirements, return time, and condition expectations",
       required: true,
       checked: false,
     },
     {
       id: "provide-contact",
       label: "Provide emergency contact information",
-      description: "Ensure renter knows how to reach you during the rental period",
+      description:
+        "Ensure renter knows how to reach you during the rental period",
       required: true,
       checked: false,
     },
@@ -81,7 +84,7 @@ export default function OwnerChecklistsPage() {
       required: false,
       checked: false,
     },
-  ]
+  ];
 
   // Post-rental checklist items for car owners
   const postRentalItems = [
@@ -155,16 +158,18 @@ export default function OwnerChecklistsPage() {
       required: false,
       checked: false,
     },
-  ]
+  ];
 
   return (
     <OwnerLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Owner Checklists</h1>
+          <h1 className="text-3xl font-bold tracking-tight">
+            Owner Checklists
+          </h1>
           <p className="text-muted-foreground mt-2">
-            Complete these checklists before and after each rental to ensure a smooth experience and protect your
-            vehicle
+            Complete these checklists before and after each rental to ensure a
+            smooth experience and protect your vehicle
           </p>
         </div>
 
@@ -186,10 +191,12 @@ export default function OwnerChecklistsPage() {
             userType="owner"
             stage="post"
             onComplete={() => console.log("Post-rental checklist completed")}
-            onSave={(items) => console.log("Post-rental checklist saved", items)}
+            onSave={(items) =>
+              console.log("Post-rental checklist saved", items)
+            }
           />
         </div>
       </div>
     </OwnerLayout>
-  )
+  );
 }

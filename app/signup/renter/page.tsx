@@ -43,14 +43,17 @@ export default function RenterSignupPage() {
 
   const handleNextStep = () => {
     setStep(step + 1);
-    window.scrollTo(0, 0);
+    if (typeof window !== "undefined") {
+      window.scrollTo(0, 0);
+    }
   };
 
   const handlePreviousStep = () => {
     setStep(step - 1);
-    window.scrollTo(0, 0);
+    if (typeof window !== "undefined") {
+      window.scrollTo(0, 0);
+    }
   };
-
   return (
     <div className="min-h-screen flex flex-col">
       <header className="border-b">
@@ -107,7 +110,7 @@ export default function RenterSignupPage() {
                   : i === 2
                   ? "Personal Info"
                   : i === 3
-                  ? window.innerWidth < 350
+                  ? typeof window !== "undefined" && window.innerWidth < 350
                     ? "Identity"
                     : "Identity Verification"
                   : "Payment"}

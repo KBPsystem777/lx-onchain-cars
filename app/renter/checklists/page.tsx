@@ -1,4 +1,6 @@
-import { RentalChecklist } from "@/components/rental-checklist"
+"use client";
+
+import { RentalChecklist } from "@/components/rental-checklist";
 
 export default function RenterChecklistsPage() {
   // Pre-rental checklist items for renters
@@ -6,7 +8,8 @@ export default function RenterChecklistsPage() {
     {
       id: "id-check",
       label: "Verify your identity with the owner",
-      description: "Ensure the owner checks your ID against your account details",
+      description:
+        "Ensure the owner checks your ID against your account details",
       required: true,
       checked: false,
     },
@@ -41,7 +44,8 @@ export default function RenterChecklistsPage() {
     {
       id: "emergency",
       label: "Review emergency procedures",
-      description: "Understand what to do in case of accident, breakdown, or other issues",
+      description:
+        "Understand what to do in case of accident, breakdown, or other issues",
       required: true,
       checked: false,
     },
@@ -73,7 +77,7 @@ export default function RenterChecklistsPage() {
       required: false,
       checked: false,
     },
-  ]
+  ];
 
   // Post-rental checklist items for renters
   const postRentalItems = [
@@ -94,7 +98,8 @@ export default function RenterChecklistsPage() {
     {
       id: "damage-report",
       label: "Report any new damage",
-      description: "Document and report any incidents that occurred during your rental",
+      description:
+        "Document and report any incidents that occurred during your rental",
       required: true,
       checked: false,
     },
@@ -133,14 +138,15 @@ export default function RenterChecklistsPage() {
       required: false,
       checked: false,
     },
-  ]
+  ];
 
   return (
     <div className="container py-10 space-y-8">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Rental Checklists</h1>
         <p className="text-muted-foreground mt-2">
-          Complete these checklists before and after your rental to ensure a smooth experience
+          Complete these checklists before and after your rental to ensure a
+          smooth experience
         </p>
       </div>
 
@@ -166,5 +172,5 @@ export default function RenterChecklistsPage() {
         />
       </div>
     </div>
-  )
+  );
 }
