@@ -88,7 +88,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
             <div className="space-y-4">
               <div className="aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=500&width=800&text=Tesla+Model+3"
+                  src="/models/everest.jpg?height=500&width=800&text=Tesla+Model+3"
                   alt="Tesla Model 3"
                   width={800}
                   height={500}
@@ -102,7 +102,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                     className="aspect-video overflow-hidden rounded-lg"
                   >
                     <Image
-                      src={`/placeholder.svg?height=150&width=200&text=Image+${i}`}
+                      src="/models/everest_1.jpg?height=500&width=800&text=Tesla+Model+3"
                       alt={`Car image ${i}`}
                       width={200}
                       height={150}
@@ -116,7 +116,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
             {/* Car Details */}
             <div>
               <div className="flex items-center justify-between">
-                <h1 className="text-3xl font-bold">Tesla Model 3</h1>
+                <h1 className="text-3xl font-bold">Ford Everest 2023</h1>
                 <div className="flex items-center">
                   <Star className="h-5 w-5 fill-primary text-primary" />
                   <span className="ml-1 font-medium">4.9</span>
@@ -127,25 +127,25 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
               </div>
               <div className="mt-2 flex items-center text-sm text-muted-foreground">
                 <MapPin className="mr-1 h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>San Juan City, MM</span>
               </div>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-                <div className="flex flex-col items-center rounded-lg border p-3">
+                {/* <div className="flex flex-col items-center rounded-lg border p-3">
                   <Car className="mb-2 h-5 w-5 text-muted-foreground" />
                   <span className="text-sm font-medium">Electric</span>
-                </div>
+                </div> */}
                 <div className="flex flex-col items-center rounded-lg border p-3">
                   <Gauge className="mb-2 h-5 w-5 text-muted-foreground" />
                   <span className="text-sm font-medium">Automatic</span>
                 </div>
                 <div className="flex flex-col items-center rounded-lg border p-3">
                   <User className="mb-2 h-5 w-5 text-muted-foreground" />
-                  <span className="text-sm font-medium">5 Seats</span>
+                  <span className="text-sm font-medium">7 Seats</span>
                 </div>
                 <div className="flex flex-col items-center rounded-lg border p-3">
                   <Fuel className="mb-2 h-5 w-5 text-muted-foreground" />
-                  <span className="text-sm font-medium">Electric</span>
+                  <span className="text-sm font-medium">Fuel</span>
                 </div>
               </div>
             </div>
@@ -159,15 +159,15 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
               </TabsList>
               <TabsContent value="description" className="mt-6 space-y-4">
                 <p>
-                  Experience the future of driving with this Tesla Model 3. This
-                  all-electric sedan combines luxury, performance, and
+                  Experience the future of driving with this Ford Everest 2023.
+                  This all-terrain SUV combines luxury, performance, and
                   cutting-edge technology to deliver an exceptional driving
                   experience.
                 </p>
                 <p>
-                  With a range of up to 358 miles on a single charge, this Model
-                  3 is perfect for both city commutes and longer road trips. The
-                  dual motor all-wheel drive provides excellent handling in all
+                  With ample space for passengers and luggage, this Everest is
+                  perfect for both city commutes and adventurous road trips. The
+                  advanced all-wheel drive provides excellent handling in all
                   weather conditions.
                 </p>
                 <p>
@@ -183,7 +183,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                     <div className="flex items-center gap-4 mb-4">
                       <div className="h-12 w-12 rounded-full overflow-hidden">
                         <Image
-                          src="/placeholder.svg?height=50&width=50&text=JD"
+                          src="/models/koleen.jpg?height=50&width=50&text=JD"
                           alt="Owner"
                           width={50}
                           height={50}
@@ -191,17 +191,16 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                         />
                       </div>
                       <div>
-                        <p className="font-medium">John Doe</p>
+                        <p className="font-medium">Koleen BP</p>
                         <p className="text-sm text-muted-foreground">
                           Owner since 2021
                         </p>
                       </div>
                     </div>
                     <p className="text-sm">
-                      Please return the car with at least 20% charge.
-                      Superchargers are available throughout the city. No
-                      smoking in the vehicle. Pets are allowed but please use
-                      the provided seat covers.
+                      Please return the car at full tank. No smoking in the
+                      vehicle. Pets are allowed but please use the provided seat
+                      covers. Please ensure the car is clean before returning.
                     </p>
                   </div>
                 </div>
@@ -339,7 +338,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
               <div className="mb-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-2xl font-bold">$75</span>
+                    <span className="text-2xl font-bold">PHP 3,500</span>
                     <span className="text-muted-foreground"> / day</span>
                   </div>
                   <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-green-100 text-green-800">
@@ -347,7 +346,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mt-1">
-                  $225 total for 3 days
+                  PHP 10,500 total for 3 days
                 </p>
               </div>
 
@@ -386,12 +385,12 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
 
               <div className="mt-6 space-y-4">
                 <div className="flex items-center justify-between text-sm">
-                  <span>$75 x 3 days</span>
-                  <span>$225.00</span>
+                  <span>PHP 3,500 x 3 days</span>
+                  <span>PHP 10,500.00</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span>Service fee</span>
-                  <span>$22.50</span>
+                  <span>PHP 0</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span>Insurance</span>
@@ -399,7 +398,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                 </div>
                 <div className="border-t pt-4 flex items-center justify-between font-medium">
                   <span>Total</span>
-                  <span>$247.50</span>
+                  <span>PHP 10,500</span>
                 </div>
               </div>
 
@@ -423,7 +422,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                     </AccordionTrigger>
                     <AccordionContent>
                       <p className="text-sm text-muted-foreground">
-                        Your booking includes insurance coverage with a $500
+                        Your booking includes insurance coverage with a PHP 500
                         deductible. Additional protection plans are available
                         during checkout.
                       </p>
@@ -433,7 +432,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
               </div>
 
               <div className="mt-6 flex items-center gap-2 rounded-lg bg-muted p-4">
-                <Shield className="h-5 w-5 text-muted-foreground" />
+                <Shield className="h-10 w-10  fill-green-500" />
                 <p className="text-sm text-muted-foreground">
                   This car is verified by LXCars and meets our quality
                   standards.
@@ -452,7 +451,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                     />
                   </div>
                   <div>
-                    <p className="text-sm font-medium">John Doe</p>
+                    <p className="text-sm font-medium">Kyle</p>
                     <div className="flex items-center">
                       <Star className="h-3 w-3 fill-primary text-primary" />
                       <span className="ml-1 text-xs">4.9 • 56 trips</span>

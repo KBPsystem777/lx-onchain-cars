@@ -1,41 +1,41 @@
-"use client"
+"use client";
 
-import { createContext, useContext, type ReactNode } from "react"
+import { createContext, useContext, type ReactNode } from "react";
 
 // This interface represents the structure of car content that would come from a CMS
 export interface CarContent {
-  id: string
-  name: string
-  description: string
-  features: string[]
+  id: string;
+  name: string;
+  description: string;
+  features: string[];
   specifications: {
-    type: string
-    transmission: string
-    seats: number
-    fuelType: string
-    mileage?: number
-    year: number
-  }
-  ownerNotes?: string
-  includedItems?: string[]
+    type: string;
+    transmission: string;
+    seats: number;
+    fuelType: string;
+    mileage?: number;
+    year: number;
+  };
+  ownerNotes?: string;
+  includedItems?: string[];
   images: {
-    main: string
-    gallery: string[]
-  }
+    main: string;
+    gallery: string[];
+  };
   pricing: {
-    base: number
-    markup: number
-    total: number
-  }
+    base: number;
+    markup: number;
+    total: number;
+  };
 }
 
 // Mock data that would come from a CMS like Strapi or Sitecore
 const mockCarContent: Record<string, CarContent> = {
   "car-1": {
     id: "car-1",
-    name: "Tesla Model 3",
+    name: "Ford Everest",
     description:
-      "Experience the future of driving with this Tesla Model 3. This all-electric sedan combines luxury, performance, and cutting-edge technology to deliver an exceptional driving experience. With a range of up to 358 miles on a single charge, this Model 3 is perfect for both city commutes and longer road trips. The dual motor all-wheel drive provides excellent handling in all weather conditions.",
+      "Experience the future of driving with this Ford Everest. This all-terrain SUV combines luxury, performance, and cutting-edge technology to deliver an exceptional driving experience. With ample space for passengers and luggage, this Everest is perfect for both city commutes and adventurous road trips. The advanced all-wheel drive provides excellent handling in all weather conditions.",
     features: [
       "Autopilot",
       "15-inch Touchscreen",
@@ -83,7 +83,7 @@ const mockCarContent: Record<string, CarContent> = {
   },
   "car-2": {
     id: "car-2",
-    name: "BMW X5",
+    name: "Ford Everest",
     description:
       "Enjoy luxury and performance with this BMW X5 SUV. Perfect for family trips or business travel, this vehicle offers a smooth ride and plenty of space for passengers and luggage. The powerful engine and advanced suspension system ensure excellent handling on any road.",
     features: [
@@ -131,32 +131,36 @@ const mockCarContent: Record<string, CarContent> = {
       total: 90,
     },
   },
-}
+};
 
 // Create a context for car content
 const CarContentContext = createContext<{
-  getCarContent: (id: string) => CarContent | null
-  getAllCars: () => CarContent[]
+  getCarContent: (id: string) => CarContent | null;
+  getAllCars: () => CarContent[];
 }>({
   getCarContent: () => null,
   getAllCars: () => [],
-})
+});
 
 // Provider component that would fetch from CMS in a real implementation
 export function CarContentProvider({ children }: { children: ReactNode }) {
   // In a real implementation, this would fetch from Strapi, Sitecore, etc.
   const getCarContent = (id: string) => {
-    return mockCarContent[id] || null
-  }
+    return mockCarContent[id] || null;
+  };
 
   const getAllCars = () => {
-    return Object.values(mockCarContent)
-  }
+    return Object.values(mockCarContent);
+  };
 
-  return <CarContentContext.Provider value={{ getCarContent, getAllCars }}>{children}</CarContentContext.Provider>
+  return (
+    <CarContentContext.Provider value={{ getCarContent, getAllCars }}>
+      {children}
+    </CarContentContext.Provider>
+  );
 }
 
 // Hook to use car content
 export function useCarContent() {
-  return useContext(CarContentContext)
+  return useContext(CarContentContext);
 }

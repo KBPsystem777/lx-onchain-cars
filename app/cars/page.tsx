@@ -122,8 +122,8 @@ export default function CarsPage() {
                       step={10}
                     />
                     <div className="mt-2 flex items-center justify-between text-sm">
-                      <span>$50</span>
-                      <span>$150</span>
+                      <span>PHP 3,000</span>
+                      <span>PHP 6,000</span>
                     </div>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ export default function CarsPage() {
                   <div className="overflow-hidden rounded-lg border transition-all hover:shadow-md">
                     <div className="aspect-video relative overflow-hidden">
                       <Image
-                        src={`/placeholder.svg?height=300&width=500&text=Car+${i}`}
+                        src={`/models/everest.jpg?height=300&width=500&text=Car+${i}`}
                         alt={`Car ${i}`}
                         width={500}
                         height={300}
@@ -228,13 +228,7 @@ export default function CarsPage() {
                     </div>
                     <div className="p-4">
                       <div className="mb-2 flex items-center justify-between">
-                        <h3 className="font-semibold">
-                          {i % 3 === 0
-                            ? "Tesla Model 3"
-                            : i % 3 === 1
-                            ? "BMW X5"
-                            : "Toyota Camry"}
-                        </h3>
+                        <h3 className="font-semibold">Ford Everest 2023</h3>
                         <div className="flex items-center">
                           <Star className="h-4 w-4 fill-primary text-primary" />
                           <span className="ml-1 text-sm">
@@ -251,7 +245,7 @@ export default function CarsPage() {
                       </p>
                       <div className="flex items-center justify-between">
                         <div>
-                          <span className="font-bold">${65 + i * 5}</span>
+                          <span className="font-bold">PHP 3,500</span>
                           <span className="text-sm text-muted-foreground">
                             {" "}
                             / day

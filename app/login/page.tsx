@@ -56,7 +56,7 @@ export default function LoginPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
             <Image
-              src="/placeholder.svg?height=60&width=200"
+              src="/models/1.webp?height=60&width=200"
               alt="LXCars PH Logo"
               width={200}
               height={60}

@@ -87,7 +87,7 @@ export default function HomePage() {
             </div>
             <div className="mx-auto w-full max-w-[500px] aspect-video relative rounded-xl overflow-hidden">
               <Image
-                src="/placeholder.svg?height=500&width=800"
+                src="/models/1.webp?height=500&width=800"
                 alt="Modern car on a scenic road"
                 fill
                 className="object-cover"
@@ -178,7 +178,7 @@ export default function HomePage() {
                 >
                   <div className="aspect-video w-full overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=300&width=500&text=Car+${i}`}
+                      src={`/models/everest.jpg?height=300&width=500&text=Car+${i}`}
                       alt={`Featured car ${i}`}
                       width={500}
                       height={300}
@@ -187,18 +187,18 @@ export default function HomePage() {
                   </div>
                   <div className="p-5">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-lg">Tesla Model 3</h3>
+                      <h3 className="font-semibold text-lg">Ford Everest</h3>
                       <div className="flex items-center">
                         <Star className="h-4 w-4 fill-primary text-primary" />
                         <span className="ml-1 text-sm">4.9</span>
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Electric • Automatic • 5 Seats
+                      SUV • Automatic • 7 Seats
                     </p>
                     <div className="mt-4 flex items-center justify-between">
                       <div>
-                        <span className="font-bold text-lg">$75</span>
+                        <span className="font-bold text-lg">PHP 3,000</span>
                         <span className="text-sm text-muted-foreground">
                           {" "}
                           / day

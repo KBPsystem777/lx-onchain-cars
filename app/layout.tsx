@@ -7,7 +7,7 @@ import { CarContentProvider } from "@/components/car-content-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CarShare - Rent or Share Your Car",
+  title: "LXCars - Rent or Share Your Car",
   description:
     "Find the perfect car to rent or share your own car and earn money",
 };

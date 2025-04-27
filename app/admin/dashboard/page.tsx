@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import {
   AlertCircle,
   Car,
@@ -14,13 +14,20 @@ import {
   Shield,
   Users,
   XCircle,
-} from "lucide-react"
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Input } from "@/components/ui/input"
-import { AdminLayout } from "@/components/admin-layout"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Input } from "@/components/ui/input";
+import { AdminLayout } from "@/components/admin-layout";
 
 export default function AdminDashboard() {
   return (
@@ -44,22 +51,30 @@ export default function AdminDashboard() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+              <CardTitle className="text-sm font-medium">
+                Total Revenue
+              </CardTitle>
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">$24,892.50</div>
-              <p className="text-xs text-muted-foreground">+15.2% from last month</p>
+              <div className="text-2xl font-bold">PHP 24,892.50</div>
+              <p className="text-xs text-muted-foreground">
+                +15.2% from last month
+              </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Active Users</CardTitle>
+              <CardTitle className="text-sm font-medium">
+                Active Users
+              </CardTitle>
               <Users className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">1,248</div>
-              <p className="text-xs text-muted-foreground">+42 new users this week</p>
+              <p className="text-xs text-muted-foreground">
+                +42 new users this week
+              </p>
             </CardContent>
           </Card>
           <Card>
@@ -69,17 +84,23 @@ export default function AdminDashboard() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">342</div>
-              <p className="text-xs text-muted-foreground">+18 new listings this week</p>
+              <p className="text-xs text-muted-foreground">
+                +18 new listings this week
+              </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Platform Fee</CardTitle>
+              <CardTitle className="text-sm font-medium">
+                Platform Fee
+              </CardTitle>
               <Percent className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">10%</div>
-              <p className="text-xs text-muted-foreground">Standard fee on all bookings</p>
+              <p className="text-xs text-muted-foreground">
+                Standard fee on all bookings
+              </p>
             </CardContent>
           </Card>
         </div>
@@ -97,13 +118,19 @@ export default function AdminDashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>User Management</CardTitle>
-                <CardDescription>View and manage all users on the platform</CardDescription>
+                <CardDescription>
+                  View and manage all users on the platform
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-between mb-4">
                   <div className="relative w-full max-w-sm">
                     <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                    <Input type="search" placeholder="Search users..." className="pl-8 w-full" />
+                    <Input
+                      type="search"
+                      placeholder="Search users..."
+                      className="pl-8 w-full"
+                    />
                   </div>
                   <div className="flex items-center gap-2">
                     <Button variant="outline" size="sm">
@@ -124,7 +151,10 @@ export default function AdminDashboard() {
                   </div>
 
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <div key={i} className="grid grid-cols-6 gap-4 p-4 border-b items-center">
+                    <div
+                      key={i}
+                      className="grid grid-cols-6 gap-4 p-4 border-b items-center"
+                    >
                       <div className="col-span-2 flex items-center gap-3">
                         <div className="h-10 w-10 rounded-full overflow-hidden">
                           <Image
@@ -140,35 +170,41 @@ export default function AdminDashboard() {
                             {i === 1
                               ? "John Doe"
                               : i === 2
-                                ? "Sarah Johnson"
-                                : i === 3
-                                  ? "Michael Brown"
-                                  : i === 4
-                                    ? "Emily Davis"
-                                    : "Robert Wilson"}
+                              ? "Sarah Johnson"
+                              : i === 3
+                              ? "Michael Brown"
+                              : i === 4
+                              ? "Emily Davis"
+                              : "Robert Wilson"}
                           </p>
                           <p className="text-xs text-muted-foreground">
                             {i === 1
                               ? "john.doe@example.com"
                               : i === 2
-                                ? "sarah.j@example.com"
-                                : i === 3
-                                  ? "mbrown@example.com"
-                                  : i === 4
-                                    ? "emily.d@example.com"
-                                    : "rwilson@example.com"}
+                              ? "sarah.j@example.com"
+                              : i === 3
+                              ? "mbrown@example.com"
+                              : i === 4
+                              ? "emily.d@example.com"
+                              : "rwilson@example.com"}
                           </p>
                         </div>
                       </div>
                       <div>
                         <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-muted text-muted-foreground">
-                          {i % 3 === 0 ? "Admin" : i % 2 === 0 ? "Car Owner" : "Renter"}
+                          {i % 3 === 0
+                            ? "Admin"
+                            : i % 2 === 0
+                            ? "Car Owner"
+                            : "Renter"}
                         </span>
                       </div>
                       <div>
                         <span
                           className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent ${
-                            i % 4 === 0 ? "bg-yellow-100 text-yellow-800" : "bg-green-100 text-green-800"
+                            i % 4 === 0
+                              ? "bg-yellow-100 text-yellow-800"
+                              : "bg-green-100 text-green-800"
                           }`}
                         >
                           {i % 4 === 0 ? "Pending" : "Active"}
@@ -179,7 +215,11 @@ export default function AdminDashboard() {
                         <Button variant="outline" size="sm">
                           View
                         </Button>
-                        <Button variant="outline" size="sm" className="text-red-500 hover:text-red-700">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="text-red-500 hover:text-red-700"
+                        >
                           Suspend
                         </Button>
                       </div>
@@ -188,7 +228,9 @@ export default function AdminDashboard() {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <div className="text-sm text-muted-foreground">Showing 5 of 1,248 users</div>
+                <div className="text-sm text-muted-foreground">
+                  Showing 5 of 1,248 users
+                </div>
                 <div className="flex items-center gap-2">
                   <Button variant="outline" size="sm" disabled>
                     Previous
@@ -205,13 +247,19 @@ export default function AdminDashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>Car Listings</CardTitle>
-                <CardDescription>Manage all car listings on the platform</CardDescription>
+                <CardDescription>
+                  Manage all car listings on the platform
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-between mb-4">
                   <div className="relative w-full max-w-sm">
                     <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                    <Input type="search" placeholder="Search cars..." className="pl-8 w-full" />
+                    <Input
+                      type="search"
+                      placeholder="Search cars..."
+                      className="pl-8 w-full"
+                    />
                   </div>
                   <div className="flex items-center gap-2">
                     <Button variant="outline" size="sm">
@@ -232,7 +280,10 @@ export default function AdminDashboard() {
                   </div>
 
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <div key={i} className="grid grid-cols-7 gap-4 p-4 border-b items-center">
+                    <div
+                      key={i}
+                      className="grid grid-cols-7 gap-4 p-4 border-b items-center"
+                    >
                       <div className="col-span-2 flex items-center gap-3">
                         <div className="h-12 w-16 rounded-md overflow-hidden">
                           <Image
@@ -248,23 +299,23 @@ export default function AdminDashboard() {
                             {i === 1
                               ? "Tesla Model 3"
                               : i === 2
-                                ? "BMW X5"
-                                : i === 3
-                                  ? "Toyota Camry"
-                                  : i === 4
-                                    ? "Honda Civic"
-                                    : "Ford Mustang"}
+                              ? "BMW X5"
+                              : i === 3
+                              ? "Toyota Camry"
+                              : i === 4
+                              ? "Honda Civic"
+                              : "Ford Mustang"}
                           </p>
                           <p className="text-xs text-muted-foreground">
                             {i === 1
                               ? "Electric • 2022"
                               : i === 2
-                                ? "SUV • 2021"
-                                : i === 3
-                                  ? "Sedan • 2020"
-                                  : i === 4
-                                    ? "Sedan • 2019"
-                                    : "Sports • 2022"}
+                              ? "SUV • 2021"
+                              : i === 3
+                              ? "Sedan • 2020"
+                              : i === 4
+                              ? "Sedan • 2019"
+                              : "Sports • 2022"}
                           </p>
                         </div>
                       </div>
@@ -272,12 +323,12 @@ export default function AdminDashboard() {
                         {i === 1
                           ? "John Doe"
                           : i === 2
-                            ? "Sarah Johnson"
-                            : i === 3
-                              ? "Michael Brown"
-                              : i === 4
-                                ? "Emily Davis"
-                                : "Robert Wilson"}
+                          ? "Sarah Johnson"
+                          : i === 3
+                          ? "Michael Brown"
+                          : i === 4
+                          ? "Emily Davis"
+                          : "Robert Wilson"}
                       </div>
                       <div className="font-medium">${65 + i * 5}/day</div>
                       <div>
@@ -286,11 +337,15 @@ export default function AdminDashboard() {
                             i % 5 === 0
                               ? "bg-yellow-100 text-yellow-800"
                               : i % 4 === 0
-                                ? "bg-red-100 text-red-800"
-                                : "bg-green-100 text-green-800"
+                              ? "bg-red-100 text-red-800"
+                              : "bg-green-100 text-green-800"
                           }`}
                         >
-                          {i % 5 === 0 ? "Pending Review" : i % 4 === 0 ? "Maintenance" : "Active"}
+                          {i % 5 === 0
+                            ? "Pending Review"
+                            : i % 4 === 0
+                            ? "Maintenance"
+                            : "Active"}
                         </span>
                       </div>
                       <div className="flex items-center">
@@ -300,7 +355,11 @@ export default function AdminDashboard() {
                             .map((_, j) => (
                               <svg
                                 key={j}
-                                className={`h-4 w-4 ${j < (5 - (i % 2)) ? "text-primary fill-primary" : "text-muted-foreground fill-muted"}`}
+                                className={`h-4 w-4 ${
+                                  j < 5 - (i % 2)
+                                    ? "text-primary fill-primary"
+                                    : "text-muted-foreground fill-muted"
+                                }`}
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                               >
@@ -308,13 +367,19 @@ export default function AdminDashboard() {
                               </svg>
                             ))}
                         </div>
-                        <span className="ml-1 text-sm">{(4 + (i % 10) / 10).toFixed(1)}</span>
+                        <span className="ml-1 text-sm">
+                          {(4 + (i % 10) / 10).toFixed(1)}
+                        </span>
                       </div>
                       <div className="flex justify-end gap-2">
                         <Button variant="outline" size="sm">
                           View
                         </Button>
-                        <Button variant="outline" size="sm" className="text-red-500 hover:text-red-700">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="text-red-500 hover:text-red-700"
+                        >
                           Remove
                         </Button>
                       </div>
@@ -323,7 +388,9 @@ export default function AdminDashboard() {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <div className="text-sm text-muted-foreground">Showing 5 of 342 cars</div>
+                <div className="text-sm text-muted-foreground">
+                  Showing 5 of 342 cars
+                </div>
                 <div className="flex items-center gap-2">
                   <Button variant="outline" size="sm" disabled>
                     Previous
@@ -340,12 +407,18 @@ export default function AdminDashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>KYC Verification Requests</CardTitle>
-                <CardDescription>Review and approve user verification documents</CardDescription>
+                <CardDescription>
+                  Review and approve user verification documents
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-4">
-                    <Button variant="outline" size="sm" className="border-primary text-primary">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-primary text-primary"
+                    >
                       All Requests (12)
                     </Button>
                     <Button variant="outline" size="sm">
@@ -377,29 +450,42 @@ export default function AdminDashboard() {
                           <div>
                             <div className="flex items-center gap-2">
                               <h3 className="font-semibold">
-                                {i === 1 ? "John Doe" : i === 2 ? "Sarah Johnson" : "Michael Brown"}
+                                {i === 1
+                                  ? "John Doe"
+                                  : i === 2
+                                  ? "Sarah Johnson"
+                                  : "Michael Brown"}
                               </h3>
                               <span
                                 className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent ${
                                   i === 1
                                     ? "bg-yellow-100 text-yellow-800"
                                     : i === 2
-                                      ? "bg-green-100 text-green-800"
-                                      : "bg-red-100 text-red-800"
+                                    ? "bg-green-100 text-green-800"
+                                    : "bg-red-100 text-red-800"
                                 }`}
                               >
-                                {i === 1 ? "Pending" : i === 2 ? "Approved" : "Rejected"}
+                                {i === 1
+                                  ? "Pending"
+                                  : i === 2
+                                  ? "Approved"
+                                  : "Rejected"}
                               </span>
                             </div>
                             <p className="text-sm text-muted-foreground">
                               {i === 1
                                 ? "john.doe@example.com"
                                 : i === 2
-                                  ? "sarah.j@example.com"
-                                  : "mbrown@example.com"}
+                                ? "sarah.j@example.com"
+                                : "mbrown@example.com"}
                             </p>
                             <p className="text-sm text-muted-foreground">
-                              Submitted: {i === 1 ? "2 hours ago" : i === 2 ? "1 day ago" : "3 days ago"}
+                              Submitted:{" "}
+                              {i === 1
+                                ? "2 hours ago"
+                                : i === 2
+                                ? "1 day ago"
+                                : "3 days ago"}
                             </p>
                           </div>
                         </div>
@@ -415,7 +501,10 @@ export default function AdminDashboard() {
                           </Button>
                           {i === 1 && (
                             <>
-                              <Button size="sm" className="bg-green-600 hover:bg-green-700">
+                              <Button
+                                size="sm"
+                                className="bg-green-600 hover:bg-green-700"
+                              >
                                 <CheckCircle className="mr-2 h-4 w-4" />
                                 Approve
                               </Button>
@@ -432,7 +521,10 @@ export default function AdminDashboard() {
                             </Button>
                           )}
                           {i === 3 && (
-                            <Button size="sm" className="bg-green-600 hover:bg-green-700">
+                            <Button
+                              size="sm"
+                              className="bg-green-600 hover:bg-green-700"
+                            >
                               <CheckCircle className="mr-2 h-4 w-4" />
                               Reconsider
                             </Button>
@@ -445,9 +537,12 @@ export default function AdminDashboard() {
                           <div className="flex items-start gap-2">
                             <AlertCircle className="h-5 w-5 text-red-500 mt-0.5" />
                             <div>
-                              <p className="font-medium text-red-800">Rejection Reason:</p>
+                              <p className="font-medium text-red-800">
+                                Rejection Reason:
+                              </p>
                               <p className="text-red-700">
-                                ID document was blurry and unreadable. Please resubmit a clearer image.
+                                ID document was blurry and unreadable. Please
+                                resubmit a clearer image.
                               </p>
                             </div>
                           </div>
@@ -469,48 +564,71 @@ export default function AdminDashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>Platform Reports</CardTitle>
-                <CardDescription>View and analyze platform performance metrics</CardDescription>
+                <CardDescription>
+                  View and analyze platform performance metrics
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-6">
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-sm font-medium">Total Bookings</CardTitle>
+                      <CardTitle className="text-sm font-medium">
+                        Total Bookings
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">1,248</div>
-                      <p className="text-xs text-muted-foreground">+18% from last month</p>
+                      <p className="text-xs text-muted-foreground">
+                        +18% from last month
+                      </p>
                     </CardContent>
                   </Card>
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-sm font-medium">Platform Revenue</CardTitle>
+                      <CardTitle className="text-sm font-medium">
+                        Platform Revenue
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">$2,489.25</div>
-                      <p className="text-xs text-muted-foreground">+15.2% from last month</p>
+                      <p className="text-xs text-muted-foreground">
+                        +15.2% from last month
+                      </p>
                     </CardContent>
                   </Card>
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-sm font-medium">Average Booking Value</CardTitle>
+                      <CardTitle className="text-sm font-medium">
+                        Average Booking Value
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">$198.50</div>
-                      <p className="text-xs text-muted-foreground">-2.3% from last month</p>
+                      <p className="text-xs text-muted-foreground">
+                        -2.3% from last month
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-lg font-semibold mb-4">Recent Activity</h3>
+                    <h3 className="text-lg font-semibold mb-4">
+                      Recent Activity
+                    </h3>
                     <div className="space-y-4">
                       {[1, 2, 3, 4, 5].map((i) => (
-                        <div key={i} className="flex items-start gap-4 border-b pb-4">
+                        <div
+                          key={i}
+                          className="flex items-start gap-4 border-b pb-4"
+                        >
                           <div
                             className={`rounded-full p-2 ${
-                              i % 3 === 0 ? "bg-green-100" : i % 3 === 1 ? "bg-blue-100" : "bg-yellow-100"
+                              i % 3 === 0
+                                ? "bg-green-100"
+                                : i % 3 === 1
+                                ? "bg-blue-100"
+                                : "bg-yellow-100"
                             }`}
                           >
                             {i % 3 === 0 ? (
@@ -526,27 +644,27 @@ export default function AdminDashboard() {
                               {i % 3 === 0
                                 ? "New booking completed"
                                 : i % 3 === 1
-                                  ? "New car listing added"
-                                  : "User verification approved"}
+                                ? "New car listing added"
+                                : "User verification approved"}
                             </p>
                             <p className="text-sm text-muted-foreground">
                               {i % 3 === 0
                                 ? "Tesla Model 3 booked by Sarah Johnson"
                                 : i % 3 === 1
-                                  ? "BMW X5 added by Michael Brown"
-                                  : "John Doe completed KYC verification"}
+                                ? "BMW X5 added by Michael Brown"
+                                : "John Doe completed KYC verification"}
                             </p>
                           </div>
                           <div className="text-sm text-muted-foreground whitespace-nowrap">
                             {i === 1
                               ? "Just now"
                               : i === 2
-                                ? "2 hours ago"
-                                : i === 3
-                                  ? "5 hours ago"
-                                  : i === 4
-                                    ? "Yesterday"
-                                    : "2 days ago"}
+                              ? "2 hours ago"
+                              : i === 3
+                              ? "5 hours ago"
+                              : i === 4
+                              ? "Yesterday"
+                              : "2 days ago"}
                           </div>
                         </div>
                       ))}
@@ -569,5 +687,5 @@ export default function AdminDashboard() {
         </Tabs>
       </div>
     </AdminLayout>
-  )
+  );
 }

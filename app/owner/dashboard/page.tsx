@@ -48,7 +48,7 @@ export default function OwnerDashboard() {
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">$4,550.32</div>
+              <div className="text-2xl font-bold">PHP4,550.32</div>
               <p className="text-xs text-muted-foreground">
                 +20.1% from last month
               </p>
